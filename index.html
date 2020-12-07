@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/89b48bc496.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Time Zone Converter</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-aligner">
+        <h3 class="app-title">Free Time Zone Converter</h3>
+        <a href="#" class="app">Download</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </nav>
+    <header class="website-header">
+      <div>
+        <img src="./img/clock.png" alt="Clock" class="logo" />
+        <h1 class="website-title">Free Time Zone Converter</h1>
+        <h2>Convert Time Anywhere, Anytime!</h2>
+      </div>
+    </header>
+    <div class="convert-block">
+      <div class="clocks">
+        <div class="clock clock1">
+          <h2>Time Zone</h2>
+          <h3>Paris</h3>
+          <div class="current-time">
+            <h4>Current Time:</h4>
+            <strong id="time1">00:00:00</strong>
+            <img src="./img/spinner.gif" alt="loading..." class="show" />
+          </div>
+          <div id="form">
+            <select name="timezone1" id="select1">
+              <option value="paris">Paris</option>
+              <option value="london">London</option>
+              <option value="roma">Roma</option>
+              <option value="new york">New York</option>
+            </select>
+          </div>
+        </div>
+        <img src="./img/convert.png" alt="Converting sign" id="convert-sign" />
+        <div class="clock clock2">
+          <h2>Time Zone</h2>
+          <h3>London</h3>
+          <div class="current-time">
+            <h4>Current Time:</h4>
+            <strong id="time2">00:00:00</strong>
+            <img src="./img/spinner.gif" alt="loading..." class="show2" />
+          </div>
+          <div id="form">
+            <select name="timezone2" id="select2">
+              <option value="paris">Paris</option>
+              <option value="london" selected>London</option>
+              <option value="roma">Roma</option>
+              <option value="new york">New York</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <p>Simply Select Your Desired Time Zones & Kaboooom</p>
+    </div>
+    <footer id="main-footer">
+      <h5>Share With Friends!</h5>
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <p>Guillaume Dupont &copy; 2020 - 2021, All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
