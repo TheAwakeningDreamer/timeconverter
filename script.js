@@ -6,6 +6,7 @@ const select1 = document.querySelector('#select1');
 const select2 = document.querySelector('#select2');
 const show = document.querySelector('.show');
 const show2 = document.querySelector('.show2');
+const swap = document.getElementById('swap');
 
 let spinner;
 
@@ -49,9 +50,18 @@ function showTime() {
   time2.textContent = currentTime2;
 }
 
+function pivotAndSwap(e) {
+  if (e.target.id === 'swap') {
+    swap.classList.toggle('pivot');
+  }
+}
+
 function showGifHideTime() {
   show.style.display = 'none';
   show2.style.display = 'none';
   time1.style.display = 'block';
   time2.style.display = 'block';
 }
+
+// Event Listeners
+swap.addEventListener('click', pivotAndSwap);

@@ -72,14 +72,19 @@ header h2 {
   margin-bottom: 25px;
 }
 
-.convert-block #convert-sign {
+.convert-block #swap {
   width: 100px;
   height: 100px;
   cursor: pointer;
   margin: 0 25px;
+  transition: transform 1s ease;
 }
 
-.convert-block #convert-sign .convert {
+.convert-block .pivot {
+  transform: rotate(-900deg);
+}
+
+.convert-block .convert {
   transition: transform 0.5s ease;
   transform: rotate(180deg);
 }
