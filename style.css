@@ -173,3 +173,22 @@ header h2 {
 #main-footer a {
   margin: 0 10px;
 }
+
+@media (max-width: 760px) {
+  .nav-aligner {
+    flex-direction: column;
+  }
+  .nav-aligner a {
+    margin-bottom: 10px;
+  }
+
+  .convert-block .clocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .convert-block p {
+    font-size: 20px;
+  }
+}
