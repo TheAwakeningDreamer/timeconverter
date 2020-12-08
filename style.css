@@ -29,6 +29,7 @@ body {
 }
 
 .nav-aligner h3 {
+  font-size: 25px;
   border-bottom: #000 solid 3px;
 }
 
@@ -38,6 +39,10 @@ body {
   border-radius: 50px;
   padding: 10px 20px;
   text-decoration: none;
+}
+
+.main-nav a:first-child {
+  background: none;
 }
 
 .main-nav a:hover {
@@ -180,6 +185,9 @@ header h2 {
   }
   .nav-aligner a {
     margin-bottom: 10px;
+  }
+  .nav-aligner h3 {
+    margin-bottom: 0;
   }
 
   .convert-block .clocks {
